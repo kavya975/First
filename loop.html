@@ -1,0 +1,47 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Frames Example</title>
+</head>
+<frameset rows="30%, 40%, 30%">
+ <frame src="image.html" name="imageFrame" noresize>
+ <frame src="paragraph.html" name="textFrame" noresize>
+ <frame src="links.html" name="linkFrame" noresize>
+ <noframes>
+ <body>
+ <p>Your browser does not support frames.</p>
+ </body>
+ </noframes>
+</frameset>
+</html>
+Supporting Files for Frames:
+1. image.html:
+html
+<!DOCTYPE html>
+<html>
+<body>
+ <h1>Image Frame</h1>
+ <img src="example.jpg" alt="Example Image" width="300" height="200">
+</body>
+</html>
+2. paragraph.html:
+html
+<!DOCTYPE html>
+<html>
+<body>
+ <h1>Paragraph Frame</h1>
+ <p>This is a paragraph displayed in the middle frame.</p>
+</body>
+</html>
+3. links.html:
+html
+<!DOCTYPE html>
+<html>
+<body>
+ <h1>Links Frame</h1>
+ <a href="https://www.example.com" target="_blank">Visit Example</a>
+</body>
+</html
